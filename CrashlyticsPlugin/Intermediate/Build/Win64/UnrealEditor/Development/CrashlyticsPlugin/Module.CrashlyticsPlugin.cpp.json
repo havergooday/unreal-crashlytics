@@ -1,0 +1,18 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "d:\\project\\unreal\\0.demo\\androidplugin\\plugins\\crashlyticsplugin\\intermediate\\build\\win64\\unrealeditor\\development\\crashlyticsplugin\\module.crashlyticsplugin.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\project\\unreal\\0.demo\\androidplugin\\intermediate\\build\\win64\\androidplugineditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "d:\\project\\unreal\\0.demo\\androidplugin\\plugins\\crashlyticsplugin\\intermediate\\build\\win64\\unrealeditor\\development\\crashlyticsplugin\\definitions.crashlyticsplugin.h",
+            "d:\\project\\unreal\\0.demo\\androidplugin\\plugins\\crashlyticsplugin\\source\\crashlyticsplugin\\private\\crashlyticsplugin.cpp",
+            "d:\\project\\unreal\\0.demo\\androidplugin\\plugins\\crashlyticsplugin\\source\\crashlyticsplugin\\public\\crashlyticsplugin.h",
+            "d:\\project\\unreal\\0.demo\\androidplugin\\plugins\\crashlyticsplugin\\source\\crashlyticsplugin\\private\\crashlyticspluginbplibrary.cpp",
+            "d:\\project\\unreal\\0.demo\\androidplugin\\plugins\\crashlyticsplugin\\source\\crashlyticsplugin\\public\\crashlyticspluginbplibrary.h",
+            "d:\\project\\unreal\\0.demo\\androidplugin\\plugins\\crashlyticsplugin\\intermediate\\build\\win64\\unrealeditor\\inc\\crashlyticsplugin\\crashlyticspluginbplibrary.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

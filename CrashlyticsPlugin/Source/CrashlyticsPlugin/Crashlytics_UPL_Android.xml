@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:android="http://schemas.android.com/apk/res/android">
+  <gameActivityImportAdditions>
+    <insert>
+      import android.widget.Toast;
+    </insert>
+  </gameActivityImportAdditions>
+
+  <resourceCopies>
+    <copyFile src="$S(PluginDir)/Raw/google-services.json" dst="$S(BuildDir)/gradle/app/google-services.json" />
+  </resourceCopies>
+ 
+  <androidManifestUpdates>
+  <!--  -->
+  </androidManifestUpdates>
+ 
+
+  <baseBuildGradleAdditions> 
+	<insert>
+	</insert>
+	</baseBuildGradleAdditions>
+
+  <buildGradleAdditions>
+	  <insert>
+
+      apply plugin: 'com.android.application'
+      apply plugin: 'com.google.gms.google-services'
+     
+      dependencies {
+        implementation 'com.google.android.gms:play-services-games:21.0.0'
+        implementation platform('com.google.firebase:firebase-bom:30.2.0')
+        implementation 'com.google.firebase:firebase-analytics'
+        implementation 'com.google.firebase:firebase-analytics-ktx'
+        implementation 'com.google.firebase:firebase-crashlytics-ndk'
+      }
+      
+      apply plugin: 'com.google.firebase.crashlytics'
+      
+       android {
+          compileOptions {
+            sourceCompatibility 1.8
+            targetCompatibility 1.8
+          }
+          
+          buildTypes {
+            release {
+              firebaseCrashlytics {
+                nativeSymbolUploadEnabled true
+                unstrippedNativeLibsDir "../androidLibraryModule/obj"
+                strippedNativeLibsDir "../androidLibraryModule/libs"
+              }
+            }
+            debug {
+              firebaseCrashlytics {
+                nativeSymbolUploadEnabled true
+                strippedNativeLibsDir 'build/intermediates/stripped_native_libs/debug/out/lib'
+                unstrippedNativeLibsDir 'src/main/jniLibs'
+                }
+            }
+          }
+      }
+    </insert>
+</buildGradleAdditions>
+  <buildscriptGradleAdditions>
+    <insert>
+      
+      dependencies {
+        classpath 'com.google.gms:google-services:4.3.3'
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.7.1'
+      }
+    </insert>
+  </buildscriptGradleAdditions>
+
+	<gradleProperties>
+		<insert>
+			android.useAndroidX=true
+			android.enableJetifier=true
+		</insert>
+	</gradleProperties>
+	
+	<androidManifestUpdates>
+		<addPermission android:name="android.permission.INTERNET" />
+		<addPermission android:name="android.permission.ACCESS_WIFI_STATE" />
+		<addPermission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	</androidManifestUpdates>
+
+</root>

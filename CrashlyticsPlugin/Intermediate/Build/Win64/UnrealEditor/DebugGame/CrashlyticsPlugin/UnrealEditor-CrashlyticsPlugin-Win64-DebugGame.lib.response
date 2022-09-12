@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-CrashlyticsPlugin-Win64-DebugGame.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Project\Unreal\0.Demo\AndroidPlugin\Intermediate\Build\Win64\AndroidPluginEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.ShadowErrors.h.obj"
+"D:\Project\Unreal\0.Demo\AndroidPlugin\Plugins\CrashlyticsPlugin\Intermediate\Build\Win64\UnrealEditor\DebugGame\CrashlyticsPlugin\Module.CrashlyticsPlugin.cpp.obj"
+"D:\Project\Unreal\0.Demo\AndroidPlugin\Plugins\CrashlyticsPlugin\Intermediate\Build\Win64\UnrealEditor\DebugGame\CrashlyticsPlugin\Module.CrashlyticsPlugin.gen.cpp.obj"
+"D:\Project\Unreal\0.Demo\AndroidPlugin\Plugins\CrashlyticsPlugin\Intermediate\Build\Win64\UnrealEditor\DebugGame\CrashlyticsPlugin\Default.rc2.res"
+/OUT:"D:\Project\Unreal\0.Demo\AndroidPlugin\Plugins\CrashlyticsPlugin\Intermediate\Build\Win64\UnrealEditor\DebugGame\CrashlyticsPlugin\UnrealEditor-CrashlyticsPlugin-Win64-DebugGame.lib"

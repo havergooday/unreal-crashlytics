@@ -1,0 +1,13 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.CrashlyticsPlugin.cpp.obj": [
+			"CrashlyticsPlugin.cpp.obj",
+			"CrashlyticsPluginBPLibrary.cpp.obj"
+		],
+		"Module.CrashlyticsPlugin.gen.cpp.obj": [
+			"CrashlyticsPlugin.init.gen.cpp.obj",
+			"CrashlyticsPluginBPLibrary.gen.cpp.obj"
+		]
+	}
+}
